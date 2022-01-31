@@ -11,14 +11,11 @@ public class Piece {
 	}
 
 
-	public Board getBoard() {
+	protected Board getBoard() {
 		return board;
 	}
 
 
-	public void setBoard(Board board) {
-		this.board = board;
-	}
 	
 	
 	
