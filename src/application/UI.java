@@ -59,6 +59,9 @@ public class UI {
 		System.out.println("Turn: " + chessMatch.getTurn());
 		// É possível mainipular as cores dos textos de saída usando "ANSI_WHITE + caractere qualquer + ANSI_RESET"
 		System.out.println("Waiting player: " + chessMatch.getCurrentPlayer());
+		if (chessMatch.getCheck()) {
+			System.out.println("CHECK!");
+		}
 	}
 	public static void printBoard(ChessPiece[][] pieces) {
 		for (int i = 0; i < pieces.length; i++) {
